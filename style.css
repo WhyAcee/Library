@@ -31,8 +31,8 @@ body {
     border-radius: 50px;
 }
 
-#addBookBtn:active {
-    transform: scale(0.95)
+#add-book-btn:hover {
+    transform: scale(1.1)
 }
 
 #add-book-form {
@@ -54,6 +54,7 @@ body {
     right: 10px;
     cursor: pointer;
     font-size: 25px;
+    
 }
 #add-book-form h2 {
     text-align: center;

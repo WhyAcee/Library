@@ -10,14 +10,29 @@ formCloseBtn.addEventListener('click', () => {
   addBookForm.style.display = 'none';
 });
 
-const myLibrary = ['HARRY POTTER', 'Sky rim', 'Wizard of Oz'];
+// boilerplate
+const myLibrary = [];
 
-function Book() {
-
+function Book(title, author, pages, read) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.read = read;
 }
 
 function addBookToLibrary() {
-  myLibrary.forEach((value, index) => console.log(value));
+  const title = document.querySelector('#title').value;
+  const author = document.querySelector('#author').value;
+  const pages = document.querySelector('#pages').value;
+  const read = document.querySelector('#read').checked;
+  const addBook = new Book(title, author, pages, read);
+
+  myLibrary.push(addBook);
+  console.log(myLibrary);
 }
 
-addBookToLibrary();
+addBookForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  addBookToLibrary();
+  addBookForm.style.display = 'none';
+});
