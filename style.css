@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.527);
+}
+
+.header h1 {
+    font-size: 3em;
+}
+
+#add-book-btn {
+    border: 2px solid black;
+    width: 150px;
+    height: 50px;
+    font-size: 1.3em;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#addBookBtn:active {
+    transform: scale(0.95)
+}
+
+#add-book-form {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 350px;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.527);
+}
+
+#add-book-form span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 25px;
+}
+#add-book-form h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.form-element {
+    margin-bottom: 15px;
+}
+
+.form-element label {
+    font-size: 1.2rem;
+}
+
+.form-element input[type="text"] {
+    display: block;
+    width: 100%;
+    height: 25px;
+    margin-top: 5px
+}
+
+.form-element input[type="checkbox"] {
+    margin-left: 5px;
+    margin-top: 5px
+}
+
+.form-element input[type="submit"] {
+    width: 100%;
+    height: 30px;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
