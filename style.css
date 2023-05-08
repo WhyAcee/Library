@@ -6,6 +6,7 @@
 body {
     width: 100vw;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.164);
 }
 
 .header {
@@ -88,4 +89,53 @@ body {
     outline: none;
     cursor: pointer;
     margin-top: 15px;
+}
+
+/* Main Content */
+
+#book-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: bisque;
+    width: 200px;
+    height: auto;
+    min-height: 150px;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.527);
+}
+
+.card  h2 {
+    align-self: center;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.card-buttons button {
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.check-read.read {
+  color: white;
+  background-color: green;
+}
+
+.check-read.not-read {
+  color: white;
+  background-color: red;
 }
